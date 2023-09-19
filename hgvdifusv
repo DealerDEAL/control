@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string alfabet;
+    bool jester_shild=true;
+    int i=0, x;    
+    int number_folder;
+    cout<<"enter alabet number\n";
+    cin>>x;
+    char alfabet_simbols[x];
+    while(jester_shild==true){
+        int chek1; chek2;
+        cout<<"\nplease enter alfabet simbol for folder\n";
+        cin>>alfabet;
+        if(alfabet!= "\n"){
+            //cout<<"g";
+            jester_shild=false;
+        }
+        for(int i=0; i<x; i++){
+            alfabet_simbols[i]=alfabet[i];
+        }
+        cout<<"number for folder";
+        cin>>number_folder;
+        int factorial=1;
+        for(int i=0; i<x; i++){
+            factorial=factorial*i;
+        }
+        factorial=factorial*255
+        if(number_folder>0 && factorial<(255*255)){
+            chek2=1;
+        }
+    }
+    
+    //int g=0;
+    /*
+    while(g<x){
+        cout<<"\n"<<alfabet_simbols[g]<<"\n";
+        g++;
+    }*/
+
+    return 0;
+}
